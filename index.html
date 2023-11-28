@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommentFilter</title>
+    <style>
+        #progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        #progress {
+            height: 100%;
+            width: 0;
+            background-color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 500px;">
+        <h2>Hey, lets see what your viewers are asking!</h2>
+        <form style="text-align: center;">
+            <label for="filterQA">Filter Question!</label><br>
+            <input type="submit" value="Filter">
+        </form>
+    </div>
+
+    <div class="QAcomments">
+        <!-- Placeholder for comments -->
+    </div>
+
+    <div id="progress-bar">
+        <div id="progress"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

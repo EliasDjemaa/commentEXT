@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Comment Analyzer",
+    "version": "1.0",
+    "description": "An extension to analyze and filter YouTube comments.",
+    "permissions": [
+        "https://www.youtube.com/",
+        "activeTab",
+        "https://www.googleapis.com/"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["script.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "index.html"
+    }
+}
